@@ -1,0 +1,25 @@
+{
+  "name": "dashboard-sencillo-de-tailwind-tarea-jeanf",
+  "version": "1.0.0",
+  "description": "The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4GeeksAcademy/Dashboard-sencillo-de-tailwind-tarea-JeanF.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/4GeeksAcademy/Dashboard-sencillo-de-tailwind-tarea-JeanF/issues"
+  },
+  "homepage": "https://github.com/4GeeksAcademy/Dashboard-sencillo-de-tailwind-tarea-JeanF#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
