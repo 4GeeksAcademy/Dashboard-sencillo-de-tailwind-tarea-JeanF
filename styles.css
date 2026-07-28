@@ -1,0 +1,98 @@
+/* styles.css - Minimal custom styles for the Influencer Dashboard */
+/* All main styles are handled by Tailwind CSS v4 via CDN */
+
+/* Dark mode class */
+.dark body,
+body.dark {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+/* Smooth transitions for interactive elements */
+.transition-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.transition-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dark .transition-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Custom scrollbar for tables on mobile */
+.table-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.table-scroll::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 3px;
+}
+
+.dark .table-scroll::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
+.table-scroll::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 3px;
+}
+
+.table-scroll::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* Bar chart animation */
+@keyframes growBar {
+    from { width: 0; }
+}
+
+.bar-animate {
+    animation: growBar 1s ease-out forwards;
+}
+
+/* KPI dot accent */
+.kpi-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Toggle switch dark mode */
+.toggle-checkbox:checked + .toggle-label {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-dot {
+    transform: translateX(100%);
+}
+
+.toggle-label {
+    transition: background 0.3s ease;
+}
+
+.toggle-dot {
+    transition: transform 0.3s ease;
+}
+
+/* Dark mode overrides for tables */
+.dark .dark-table-head {
+    border-bottom-color: #334155;
+}
+
+.dark .dark-table-row {
+    border-bottom-color: #1e293b;
+}
+
+.dark .dark-table-row:hover {
+    background-color: #1e293b;
+}
+
+.dark .dark-table-foot {
+    border-top-color: #475569;
+    background-color: #1e293b;
+}
